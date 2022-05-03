@@ -1,0 +1,159 @@
+*
+{
+    margin-top: 50;
+	margin-left: auto;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body
+{
+    background: #091921;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+.container
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative
+	
+}
+
+.clock
+{
+	width: 200px;
+	height: 200px;
+	background-color: rgb(77, 75, 75);
+	border-radius: 50%;
+	border: 2px solid rgb(109, 8, 8);
+	position: relative;
+}
+
+.numbers
+{
+	width: inherit;
+	height: inherit;
+	position: relative;
+	color: rgb(241, 177, 177);
+}
+
+.numbers div
+{
+	position: absolute;
+}
+
+.twelve
+{
+top: 10px;
+left: 50%;
+transform: translateX(-60%);
+}
+
+.three
+{
+	right: 15px;
+	top: 49%;
+	transform: translateY(-60%);
+}
+
+.six
+{
+	top: 170px;
+	left: 50%;
+	transform: translateX(-60%);
+}
+
+.nine 
+{
+	left: 15px;
+	top: 49%;
+	transform: translateY(-60%);
+}
+
+.arrows
+{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100% 100% 0 0;
+}
+
+.arrows div
+{
+	width: 2px;
+	height: 70px;
+	background-color: rgb(10, 1, 1);
+	position: absolute;
+	bottom: 50%;
+	transform-origin: bottom center;
+}
+
+.arrows .second
+{
+	transform: rotate(270deg);
+	width: 1px;
+}
+
+.arrows .hour
+{
+	height: 50px;
+	transform: rotate(90deg)
+}
+
+#drop-area
+{
+	width: 480px;
+	height: 200px;
+	padding: 25px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	cursor: pointer;
+	color:rgb(109, 8, 8);
+	border: 2px dashed;
+	border-radius: 10px;
+}
+
+.my-form
+{
+	margin-bottom: 10px;
+}
+
+.button 
+{
+	margin-left: -100px;
+}
+
+.button.hover 
+
+{
+	background: rgb(173, 108, 108);
+}
+
+#fileElem 
+{
+	display: none;
+}
+
+#drop-area.highlight
+{
+	border-color: white;
+	border: solid;	
+}
